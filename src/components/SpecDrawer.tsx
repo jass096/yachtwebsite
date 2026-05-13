@@ -29,7 +29,7 @@ export default function SpecDrawer({ yachtId, onClose }: SpecDrawerProps) {
             initial={{ x: 400 }}
             animate={{ x: 0 }}
             exit={{ x: 400 }}
-            transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
+            transition={{ duration: 0.6 }}
             className="spec-drawer"
             style={{
               position: 'fixed',

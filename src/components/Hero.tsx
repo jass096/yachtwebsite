@@ -29,7 +29,7 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.96, ease: [0.22, 1, 0.36, 1] }
+      transition: { duration: 0.96 }
     }
   };
 
@@ -165,6 +165,7 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
       )}
 
       <button
+        className="glass-mid"
         style={{
           position: 'fixed',
           bottom: 32,
@@ -172,7 +173,6 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
           zIndex: 50,
           transform: menuOpen ? 'translateX(calc(-1 * clamp(260px,38vw,420px)))' : fleetOpen ? 'translateX(200px)' : 'none',
           opacity: fleetOpen ? 0 : 1,
-          className: 'glass-mid',
           padding: 'clamp(12px,1.2vw,16px) clamp(24px,3vw,40px)',
           fontSize: 'clamp(11px,1vw,14px)',
           letterSpacing: '0.2em',

@@ -45,7 +45,7 @@ export default function Testimonials() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.6, delay: i * 0.07 }}
             className="card"
             style={{
               flexShrink: 0,
